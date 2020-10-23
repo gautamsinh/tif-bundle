@@ -7,4 +7,14 @@
  * file that was distributed with this source code.
  */
 
+namespace Contao\TifBundle;
 
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+/**
+ * Class ConratTifBundle
+ * @package Contao\TifBundle\
+ */
+class ConratTifBundle extends Bundle
+{
+}

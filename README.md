@@ -1,21 +1,19 @@
-# Contao 4 calendar bundle
+# conrat/tif-bundle
+Use this bundle for learning to code contao frontend modules.
+***Minimum requirement is contao >=4.8!***
 
-[![](https://img.shields.io/packagist/v/contao/calendar-bundle.svg?style=flat-square)](https://packagist.org/packages/contao/calendar-bundle)
-[![](https://img.shields.io/packagist/dt/contao/calendar-bundle.svg?style=flat-square)](https://packagist.org/packages/contao/calendar-bundle)
 
-The calendar bundle adds calendar functionality to Contao 4.
+The bundle contains 3 Contao Frontend Modules
+* "Hello world" tif module
+* Vue.js tif module
+* Vue.js pixabay image collection module (requires pixabay API-Key https://pixabay.com/api/docs/)
 
-Contao is an Open Source PHP Content Management System for people who want a
-professional website that is easy to maintain. Visit the [project website][1]
-for more information.
+![Alt text](src/Resources/readme/readme_pixabay_module.png?raw=true "Pixabay image collection module")
 
-## License
 
-Contao is licensed under the terms of the LGPLv3.
+## Installation 
+* Use Contao Manager and search for conrat/tif-bundle and then install the bundle
+* Run database install tool.
+*
 
-## Getting support
-
-Visit the [support page][2] to learn about the available support options.
-
-[1]: https://contao.org
-[2]: https://contao.org/en/support.html
+### See https://docs.contao.org/dev/

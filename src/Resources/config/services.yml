@@ -1,15 +1,24 @@
 services:
-    _instanceof:
-        Contao\CoreBundle\Framework\FrameworkAwareInterface:
-            calls:
-                - [setFramework, ['@contao.framework']]
+  Contao\TifBundle\Controller\FrontendModule\DummyModuleController:
+    calls:
+    - ['setContainer', ['@Psr\Container\ContainerInterface']]
+    tags:
+    - { name: contao.frontend_module, category: dummy }
+    - { name: container.service_subscriber }
+    public: true
 
-    contao_calendar.picker.event_provider:
-        class: Contao\TifBundle\Picker\EventPickerProvider
-        arguments:
-            - '@knp_menu.factory'
-            - '@router'
-            - '@?translator'
-            - '@security.helper'
-        tags:
-            - { name: contao.picker_provider, priority: 96 }
+  Contao\TifBundle\Controller\FrontendModule\VueDummyModuleController:
+    calls:
+    - ['setContainer', ['@Psr\Container\ContainerInterface']]
+    tags:
+    - { name: contao.frontend_module, category: dummy }
+    - { name: container.service_subscriber }
+    public: true
+
+  Contao\TifBundle\Controller\FrontendModule\VuePixabayModuleController:
+    calls:
+    - ['setContainer', ['@Psr\Container\ContainerInterface']]
+    tags:
+    - { name: contao.frontend_module, category: dummy }
+    - { name: container.service_subscriber }
+    public: true

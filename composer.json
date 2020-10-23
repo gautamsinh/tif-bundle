@@ -1,70 +1,38 @@
 {
-    "name": "conrat/tif-bundle",
-    "type": "contao-bundle",
-    "description": "Adds tif functionality to Contao",
-    "homepage": "https://contao.org",
-    "license": "LGPL-3.0-or-later",
-    "authors": [
-        {
-            "name": "gautamsinh",
-            "homepage": "https://github.com/leofeyer"
-        },
-        {
-            "name": "Conrat",
-            "homepage": "https://contao.org/contributors"
-        }
-    ],
-    "require": {
-        "php": "^7.2",
-        "contao/core-bundle": "self.version",
-        "friendsofsymfony/http-cache": "^2.4",
-        "patchwork/utf8": "^1.2",
-        "symfony/config": "4.4.*",
-        "symfony/dependency-injection": "4.4.*",
-        "symfony/http-foundation": "4.4.*",
-        "symfony/http-kernel": "4.4.*",
-        "symfony/yaml": "4.4.*"
-    },
-    "conflict": {
-        "contao/core": "*",
-        "contao/manager-plugin": "<2.0 || >=3.0"
-    },
-    "require-dev": {
-        "contao/manager-plugin": "^2.3.1",
-        "contao/test-case": "^4.0",
-        "phpunit/phpunit": "^8.4",
-        "symfony/http-client": "4.4.*",
-        "symfony/phpunit-bridge": "4.4.*"
-    },
-    "extra": {
-        "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin",
-        "symfony": {
-            "require": "^4.4"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Conrat\\TifBundle\\": "src/"
-        },
-        "classmap": [
-            "src/Resources/contao/"
-        ],
-        "exclude-from-classmap": [
-            "src/Resources/contao/config/",
-            "src/Resources/contao/dca/",
-            "src/Resources/contao/languages/",
-            "src/Resources/contao/templates/"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Conrat\\TifBundle\\Tests\\": "tests/"
-        }
-    },
-    "support": {
-        "issues": "https://github.com/contao/contao/issues",
-        "forum": "https://community.contao.org",
-        "source": "https://github.com/gautamsinh/tif-bundle",
-        "docs": "https://docs.contao.org"
+  "name": "conrat/tif-bundle",
+  "description": "Contao dummy frontend modules.",
+  "keywords": [
+    "contao 4",
+    "vue.js",
+    "pixabay",
+    "bundle",
+    "dummy bundle",
+    "hello world",
+    "skeleton"
+  ],
+  "type": "contao-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gautamsinh",
+      "email": "morigautam13@gmail.com",
+      "homepage": "https://github.com/gautamsinh/tif-bundle",
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/gautamsinh/tif-bundle/issues",
+    "source": "https://github.com/gautamsinh/tif-bundle"
+  },
+  "require": {
+    "contao/core-bundle":"^4.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Conrat\\TifBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin"
+  }
 }

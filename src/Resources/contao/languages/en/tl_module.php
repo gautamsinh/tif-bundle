@@ -7,4 +7,13 @@
  * file that was distributed with this source code.
  */
 
+// Legends
+$GLOBALS['TL_LANG']['tl_module']['pixabay_legend'] = 'Pixabay settings';
+
+// Fields
+$GLOBALS['TL_LANG']['tl_module']['pixabay_api_key'] = [
+    'Pixabay API key',
+    'Please enter your API key.',
+];
+
 
