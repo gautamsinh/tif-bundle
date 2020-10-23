@@ -1,0 +1,15 @@
+services:
+    _instanceof:
+        Contao\CoreBundle\Framework\FrameworkAwareInterface:
+            calls:
+                - [setFramework, ['@contao.framework']]
+
+    contao_calendar.picker.event_provider:
+        class: Contao\TifBundle\Picker\EventPickerProvider
+        arguments:
+            - '@knp_menu.factory'
+            - '@router'
+            - '@?translator'
+            - '@security.helper'
+        tags:
+            - { name: contao.picker_provider, priority: 96 }
