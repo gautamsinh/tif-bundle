@@ -1,16 +1,16 @@
 {
-    "name": "contao/tif-bundle",
+    "name": "Conrat/tif-bundle",
     "type": "contao-bundle",
     "description": "Adds tif functionality to Contao",
     "homepage": "https://contao.org",
     "license": "LGPL-3.0-or-later",
     "authors": [
         {
-            "name": "Leo Feyer",
+            "name": "gautamsinh",
             "homepage": "https://github.com/leofeyer"
         },
         {
-            "name": "Contao Community",
+            "name": "Conrat",
             "homepage": "https://contao.org/contributors"
         }
     ],
@@ -37,14 +37,14 @@
         "symfony/phpunit-bridge": "4.4.*"
     },
     "extra": {
-        "contao-manager-plugin": "Contao\\TifBundle\\ContaoManager\\Plugin",
+        "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin",
         "symfony": {
             "require": "^4.4"
         }
     },
     "autoload": {
         "psr-4": {
-            "Contao\\TifBundle\\": "src/"
+            "Conrat\\TifBundle\\": "src/"
         },
         "classmap": [
             "src/Resources/contao/"
@@ -58,7 +58,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Contao\\TifBundle\\Tests\\": "tests/"
+            "Conrat\\TifBundle\\Tests\\": "tests/"
         }
     },
     "support": {
