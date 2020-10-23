@@ -7,20 +7,20 @@
  * file that was distributed with this source code.
  */
 
-namespace Contao\TifBundle\ContaoManager;
+namespace Conrat\TifBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\CoreBundle\ContaoCoreBundle;
-use Contao\TifBundle\TifBundle;
+use Conrat\TifBundle\ConratTifBundle;
 use Contao\ManagerPlugin\Routing\RoutingPluginInterface;
 use Symfony\Component\Config\Loader\LoaderResolverInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
 
 /**
  * Class Plugin
- * @package Contao\TifBundle\ContaoManager
+ * @package Conrat\TifBundle\ContaoManager
  */
 class Plugin implements RoutingPluginInterface, BundlePluginInterface
 {
@@ -31,12 +31,12 @@ class Plugin implements RoutingPluginInterface, BundlePluginInterface
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(TifBundle::class)
+            BundleConfig::create(ConratTifBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 
-    /**
+    /** 
      * @param LoaderResolverInterface $resolver
      * @param KernelInterface $kernel
      * @return null|\Symfony\Component\Routing\RouteCollection
@@ -47,5 +47,4 @@ class Plugin implements RoutingPluginInterface, BundlePluginInterface
         $file = __DIR__ . '/../Resources/config/routing.yml';
         return $resolver->resolve($file)->load($file);
     }
-
 }

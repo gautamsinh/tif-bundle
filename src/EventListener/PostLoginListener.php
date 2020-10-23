@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Contao\TifBundle\EventListener;
+namespace Conrat\TifBundle\EventListener;
 
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;

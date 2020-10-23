@@ -6,5 +6,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+// config.php
+dfsf
+use Conrat\TifBundle\EventListener\PostLoginListener;
 
-
+$GLOBALS['TL_HOOKS']['postLogin'][] = array(
+    PostLoginListener::class,
+    '__invoke'
+);

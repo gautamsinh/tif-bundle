@@ -1,29 +1,5 @@
 services:
-  Contao\TifBundle\Controller\FrontendModule\DummyModuleController:
-    calls:
-    - ['setContainer', ['@Psr\Container\ContainerInterface']]
-    tags:
-    - { name: contao.frontend_module, category: dummy }
-    - { name: container.service_subscriber }
-    public: true
-
-  Contao\TifBundle\Controller\FrontendModule\VueDummyModuleController:
-    calls:
-    - ['setContainer', ['@Psr\Container\ContainerInterface']]
-    tags:
-    - { name: contao.frontend_module, category: dummy }
-    - { name: container.service_subscriber }
-    public: true
-
-  Contao\TifBundle\Controller\FrontendModule\VuePixabayModuleController:
-    calls:
-    - ['setContainer', ['@Psr\Container\ContainerInterface']]
-    tags:
-    - { name: contao.frontend_module, category: dummy }
-    - { name: container.service_subscriber }
-    public: true
-  
-  Contao\TifBundle\EventListener\PostLoginListener:
+  Conrat\TifBundle\EventListener\PostLoginListener:
     arguments:
       - "@contao.framework"
       - "@session"

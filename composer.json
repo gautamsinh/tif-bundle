@@ -2,13 +2,7 @@
   "name": "conrat/tif-bundle",
   "description": "Contao dummy frontend modules.",
   "keywords": [
-    "contao 4",
-    "vue.js",
-    "pixabay",
-    "bundle",
-    "dummy bundle",
-    "hello world",
-    "skeleton"
+    "contao 4"
   ],
   "type": "contao-bundle",
   "license": "MIT",
@@ -25,11 +19,14 @@
     "source": "https://github.com/gautamsinh/tif-bundle"
   },
   "require": {
-    
+    "contao/core-bundle":"^4.9"
   },
   "autoload": {
     "psr-4": {
       "Conrat\\TifBundle\\": "src/"
     }
+  },
+   "extra": {
+    "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin"
   }
 }

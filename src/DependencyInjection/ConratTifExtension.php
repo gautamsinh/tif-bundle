@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Contao\TifBundle\DependencyInjection;
+namespace Conrat\TifBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
  * Class ConratTifExtension
- * @package Contao\TifBundle\DependencyInjection
+ * @package Conrat\TifBundle\DependencyInjection
  */
 class ConratTifExtension extends Extension
 {
