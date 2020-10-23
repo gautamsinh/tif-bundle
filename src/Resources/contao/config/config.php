@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 // config.php
-dfsf
+
 use Conrat\TifBundle\EventListener\PostLoginListener;
 
 $GLOBALS['TL_HOOKS']['postLogin'][] = array(
