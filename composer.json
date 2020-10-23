@@ -32,7 +32,7 @@
       "Conrat\\TifBundle\\": "src/"
     }
   },
-  "extra": {
-    "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin"
-  }
+  // "extra": {
+  //   "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin"
+  // }
 }
