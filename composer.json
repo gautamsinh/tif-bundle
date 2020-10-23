@@ -31,8 +31,5 @@
     "psr-4": {
       "Conrat\\TifBundle\\": "src/"
     }
-  },
-  // "extra": {
-  //   "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin"
-  // }
+  }
 }
