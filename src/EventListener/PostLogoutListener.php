@@ -9,23 +9,20 @@
 
 namespace Conrat\TifBundle\EventListener;
 
-
 use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\User;
 use Contao\Database;
 
 /**
- * @Hook("postLogin")
+ * @Hook("postLogout")
  */
-class PostLoginListener
+class PostLogoutListener
 {
-
     public function __invoke(User $user): void
     {
         $objDatabase = Database::getInstance();
         if ($user instanceof \Contao\BackendUser) {
-            $token = sha1(uniqid($user->email, true));
-            $objDatabase->prepare("UPDATE tl_user SET tifToken='" . $token . "' WHERE id=?")
+            $objDatabase->prepare("UPDATE tl_user SET tifToken='' WHERE id=?")
                 ->execute($user->id);
         }
     }

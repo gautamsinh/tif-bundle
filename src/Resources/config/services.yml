@@ -6,3 +6,17 @@ services:
       - Contao\BackendUser
       - "@?logger"
     public: true
+  Conrat\TifBundle\EventListener\PostLogoutListener:
+    arguments:
+      - "@contao.framework"
+      - "@session"
+      - Contao\BackendUser
+      - "@?logger"
+    public: true
+  Conrat\TifBundle\EventListener\GetUserNavigationListener:
+    arguments:
+      - "@contao.framework"
+      - "@session"
+      - Contao\BackendUser
+      - "@?logger"
+    public: true
