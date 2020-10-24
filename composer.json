@@ -21,16 +21,12 @@
   "require": {
     "contao/core-bundle":"^4.9"
   },
-  "autoload": { 
+  "autoload": {
     "psr-4": {
       "Conrat\\TifBundle\\": "src/"
-    },
-    "exclude-from-classmap":[
-       "src/Resources/contao/config/",
-        "src/Resources/contao/dca/",
-        "src/Resources/contao/languages/",
-        "src/Resources/contao/templates/"
-    ]
+    }
+  },
+   "extra": {
+    "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin"
   }
-  
 }
