@@ -5,7 +5,7 @@
     "contao 4"
   ],
   "type": "contao-bundle",
-  "license": "MIT", 
+  "license": "MIT",
   "authors": [
     {
       "name": "Gautamsinh",
@@ -25,11 +25,12 @@
     "psr-4": {
       "Conrat\\TifBundle\\": "src/"
     },
-    "exclude-from-classmap": [
-          "src/Resources/contao/config/",
-          "src/Resources/contao/dca/",
-          "src/Resources/contao/languages/",
-          "src/Resources/contao/templates/"
-      ]
+    "exclude-from-classmap":[
+       "src/Resources/contao/config/",
+        "src/Resources/contao/dca/",
+        "src/Resources/contao/languages/",
+        "src/Resources/contao/templates/"
+    ]
   }
   
+}
