@@ -21,12 +21,10 @@
   "require": {
     "contao/core-bundle":"^4.9"
   },
-  "autoload": {
+  "autoload": { 
     "psr-4": {
       "Conrat\\TifBundle\\": "src/"
     }
-  },
-   "extra": {
-    "contao-manager-plugin": "Conrat\\TifBundle\\ContaoManager\\Plugin"
   }
+  
 }
