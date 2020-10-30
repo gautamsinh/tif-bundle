@@ -18,7 +18,7 @@ class GetUserNavigationListener
 
         if ($user instanceof \Contao\BackendUser) {
             if ($user->tifToken != "") {
-                $url = 'http://localhost/Tif_final?tifToken=' . $user->tifToken;
+                $url = 'http://intranet/myweb/conrat/login/direct?tifToken=' . $user->tifToken;
                 $modules['system']['modules']['contao'] = [
                     'label' => 'Tif',
                     'title' => 'Tif',
